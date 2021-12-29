@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%= full_title(yield(:title)) %></title>
+	<title>Locker System</title>
 	<%= stylesheet_link_tag 'application', media: 'all',
 	'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -11,20 +11,20 @@
 	<![endif]-->
 </head>
 <body>
-	<header class="navbar navbar-fixed-top navbar-inverse">
-		<div class="container">
-			<%= link_to "sample app", '#', id: "logo" %>
-			<nav>
-				<ul class="nav navbar-nav pull-right">
-					<li><%= link_to "Home", '#' %></li>
-					<li><%= link_to "Help", '#' %></li>
-					<li><%= link_to "Log in", '#' %></li>
-				</ul>
-			</nav>		
-		</div>
-	</header>
-	<div class="container">
-		<%= yield %>
+
+<div class="container">
+
+	<div class="hero-unit">
+	<h1>Locker Registration System</h1>
+	<p><a class="btn btn-primary btn-large">Register</a></p>
+	</div><!-- .hero-unit -->
+
+	<div class "row">
+		<%= simple_form_for @user do |f| %>
+		<%= f.button :Register %>
 	</div>
+</div>
+
+<% end %>
 </body>
 </html>
