@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lockerNumber: 1
+  location: MyString
+  type: 
+  combo: 1
+
+two:
+  lockerNumber: 1
+  location: MyString
+  type: 
+  combo: 1

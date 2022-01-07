@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numberofsemester:</strong>
+  <%= @registration.numberOfSemester %>
+</p>
+
+<p>
+  <strong>Termsaccepted:</strong>
+  <%= @registration.termsAccepted %>
+</p>
+
+<%= link_to 'Edit', edit_registration_path(@registration) %> |
+<%= link_to 'Back', registrations_path %>

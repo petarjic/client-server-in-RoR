@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lockernumber:</strong>
+  <%= @locker.lockerNumber %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @locker.location %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @locker.type %>
+</p>
+
+<p>
+  <strong>Combo:</strong>
+  <%= @locker.combo %>
+</p>
+
+<%= link_to 'Edit', edit_locker_path(@locker) %> |
+<%= link_to 'Back', lockers_path %>
