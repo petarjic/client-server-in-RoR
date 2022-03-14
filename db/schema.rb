@@ -11,40 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124021434) do
-
-  create_table "lockers", force: true do |t|
-    t.integer  "lockerNumber"
-    t.string   "location"
-    t.string   "type"
-    t.integer  "combo"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20141124021003) do
 
   create_table "organizations", force: true do |t|
-    t.string   "name"
+    t.string   "name",          default: "", null: false
     t.string   "streetAddress"
     t.string   "city"
     t.string   "country"
     t.string   "postalCode"
     t.string   "phone"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "registrations", force: true do |t|
-    t.integer  "numberOfSemester"
-    t.boolean  "termsAccepted"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "students", force: true do |t|
-    t.integer  "studentNumber"
-    t.string   "firstName"
-    t.string   "lastName"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
