@@ -12,8 +12,36 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :numberOfSemester %><br>
-    <%= f.number_field :numberOfSemester %>
+    <%= f.label :studentNumber %><br>
+    <%= f.number_field :studentNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :firstName %><br>
+    <%= f.text_field :firstName %>
+  </div>
+  <div class="field">
+    <%= f.label :lastName %><br>
+    <%= f.text_field :lastName %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :lockerNumber %><br>
+    <%= f.number_field :lockerNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :lockerType %><br>
+    <%= f.text_field :lockerType %>
+  </div>
+  <div class="field">
+    <%= f.label :lockerCombo %><br>
+    <%= f.number_field :lockerCombo %>
+  </div>
+  <div class="field">
+    <%= f.label :numberOfSemesters %><br>
+    <%= f.number_field :numberOfSemesters %>
   </div>
   <div class="field">
     <%= f.label :termsAccepted %><br>

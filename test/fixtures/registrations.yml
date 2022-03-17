@@ -1,9 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  numberOfSemester: 1
+  studentNumber: 1
+  firstName: MyString
+  lastName: MyString
+  email: MyString
+  lockerNumber: 1
+  lockerType: MyString
+  lockerCombo: 1
+  numberOfSemesters: 1
   termsAccepted: false
 
 two:
-  numberOfSemester: 1
+  studentNumber: 1
+  firstName: MyString
+  lastName: MyString
+  email: MyString
+  lockerNumber: 1
+  lockerType: MyString
+  lockerCombo: 1
+  numberOfSemesters: 1
   termsAccepted: false

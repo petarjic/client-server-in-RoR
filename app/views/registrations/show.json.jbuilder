@@ -1,1 +1,1 @@
-json.extract! @registration, :id, :numberOfSemester, :termsAccepted, :created_at, :updated_at
+json.extract! @registration, :id, :studentNumber, :firstName, :lastName, :email, :lockerNumber, :lockerType, :lockerCombo, :numberOfSemesters, :termsAccepted, :created_at, :updated_at

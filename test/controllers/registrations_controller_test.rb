@@ -18,7 +18,7 @@ class RegistrationsControllerTest < ActionController::TestCase
 
   test "should create registration" do
     assert_difference('Registration.count') do
-      post :create, registration: { numberOfSemester: @registration.numberOfSemester, termsAccepted: @registration.termsAccepted }
+      post :create, registration: { email: @registration.email, firstName: @registration.firstName, lastName: @registration.lastName, lockerCombo: @registration.lockerCombo, lockerNumber: @registration.lockerNumber, lockerType: @registration.lockerType, numberOfSemesters: @registration.numberOfSemesters, studentNumber: @registration.studentNumber, termsAccepted: @registration.termsAccepted }
     end
 
     assert_redirected_to registration_path(assigns(:registration))
@@ -35,7 +35,7 @@ class RegistrationsControllerTest < ActionController::TestCase
   end
 
   test "should update registration" do
-    patch :update, id: @registration, registration: { numberOfSemester: @registration.numberOfSemester, termsAccepted: @registration.termsAccepted }
+    patch :update, id: @registration, registration: { email: @registration.email, firstName: @registration.firstName, lastName: @registration.lastName, lockerCombo: @registration.lockerCombo, lockerNumber: @registration.lockerNumber, lockerType: @registration.lockerType, numberOfSemesters: @registration.numberOfSemesters, studentNumber: @registration.studentNumber, termsAccepted: @registration.termsAccepted }
     assert_redirected_to registration_path(assigns(:registration))
   end
 
