@@ -1,10 +1,8 @@
 <h1>Registrations</h1>
 
-<%= form_tag registrations_path, :method => 'get' do %>
-  <p>
-    <%= text_field_tag :search %>
-    <%= submit_tag "search", :name => nil %>
-  </p>
+<%= form_tag(registrations_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
+  <%= submit_tag "Search", :name => nil %>
 <% end %>
 
 <table>
@@ -17,11 +15,11 @@
   </thead>
 
   <tbody>
-    <% @registrations.each do |registration| %>
+    <% for registration in @registrations %>
       <tr>
-        <td><%= link_to Registration.lockerNumber, registration_path(registration) %></td>
+        <td><%= link_to registration.lockerNumber, registration_path(registration) %></td>
         <td><%= link_to "Edit", edit_registration_path(registration) %></td>
-        <td><%= link_to "Destroy", registrations_path(registration), :method => :delete %></td>
+        <td><%= link_to 'Destroy', registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

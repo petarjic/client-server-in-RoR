@@ -3,9 +3,13 @@ class RegistrationsController < ApplicationController
 
   # GET /registrations
   # GET /registrations.json
-  def index
+def index
+  if params[:search]
     @registrations = Registration.search(params[:search])
+  else
+    @registrations = Registration.all
   end
+end
 
   # GET /registrations/1
   # GET /registrations/1.json

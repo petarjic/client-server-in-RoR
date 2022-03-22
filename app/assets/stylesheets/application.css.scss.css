@@ -17,8 +17,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body { padding-top: 70px}
+body { padding-top: 60px}
 
 .container-main {
-	background: #88AF3B;
+	background: #E6E6FF;
 }
