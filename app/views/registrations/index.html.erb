@@ -1,5 +1,5 @@
 <h1>Registrations</h1>
-
+<!--Keiko Climaco 5999930 Implemented search function! woo! -->
 <%= form_tag(registrations_path, :method => "get", id: "search-form") do %>
   <%= text_field_tag :search, params[:search], placeholder: "Search Lockers" %>
   <%= submit_tag "Search", :name => nil %>

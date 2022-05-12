@@ -2,12 +2,24 @@
 
 one:
   lockerNumber: 1
-  location: MyString
+  location: E
   type: 
-  combo: 1
+  combo: 1111
 
 two:
-  lockerNumber: 1
-  location: MyString
+  lockerNumber: 2
+  location: E
   type: 
-  combo: 1
+  combo: 1234
+
+three:
+  lockerNumber: 3
+  location: C
+  type: 
+  combo: 7658
+
+three:
+  lockerNumber: 4
+  location: C
+  type: 
+  combo: 7765

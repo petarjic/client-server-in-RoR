@@ -4,6 +4,7 @@ class RegistrationsController < ApplicationController
   # GET /registrations
   # GET /registrations.json
 def index
+  # Keiko Climacoo 5999930, modifying get index to implement search function
   if params[:search]
     @registrations = Registration.search(params[:search])
   else

@@ -1,4 +1,6 @@
 class Registration < ActiveRecord::Base
+
+	# Keiko Climaco 5999930, validation checks for user input
 	has_many :lockers
 	belongs_to :organization
 	validates :studentNumber, presence: true, length: {maximum: 7}
@@ -11,6 +13,7 @@ class Registration < ActiveRecord::Base
 	validates :numberOfSemesters, presence: true
 	validates :termsAccepted, presence: true, confirmation: true
 
+	# Keiko Climaco 5999930, implementing search function
 	def self.search(query)
 	  where("lockerNumber like ?", "%#{query}%")
 	end
