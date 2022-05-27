@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 gem 'simple_form'
 gem 'country_select'
+gem 'sorted', '~> 0.4.3'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

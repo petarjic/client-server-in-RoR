@@ -8,7 +8,8 @@ def index
   if params[:search]
     @registrations = Registration.search(params[:search])
   else
-    @registrations = Registration.all
+    #Keiko Climaco 5999930, implementing database sort by locker number!
+    @registrations = Registration.sorted_by_locker_number
   end
 end
 
