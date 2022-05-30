@@ -9,9 +9,3 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 end
 
-$LOAD_PATH.unshift File.dirname(__FILE__) + "/../../../../lib"
-require "webrat"
-
-Webrat.configure do |config|
-  config.mode = :rails
-end
